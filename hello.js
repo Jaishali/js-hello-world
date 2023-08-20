@@ -3,8 +3,7 @@ Welcome, new coder.
 Enter your code on line 7 to print 'Hello, World!' 
 to the console (the panel on the right)
 */
-
-console.log("Hello");
+console.log("Hello World");
 
 /*  
 Next, PLAY! 
