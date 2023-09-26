@@ -126,4 +126,18 @@ Modify your code on line 7 to try to accomplish the tasks listed below:
    7. Print two messages on the same line.
    8. Print a message that contains quote marks, such as Quoth the Raven "Nevermore".
    9. Other. You choose!
-*/
+*/let shuttleCrews = [
+   ['Robert Gibson', 'Mark Lee', 'Mae Jemison'],
+   ['Kent Rominger', 'Ellen Ochoa', 'Bernard Harris'],
+   ['Eilen Collins', 'Winston Scott',  'Catherin Coleman']
+];
+
+let newCrew = ['Mark Polansky', 'Robert Curbeam', 'Joan Higginbotham'];
+
+// Add a new crew array to the end of shuttleCrews
+shuttleCrews.push(newCrew);
+console.log(shuttleCrews);
+
+// Reverse the order of the crew at index 1
+shuttleCrews[1].reverse();
+console.log(shuttleCrews[1]);
