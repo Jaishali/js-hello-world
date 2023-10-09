@@ -171,7 +171,7 @@ let candidateAnswers = [];
 //const input = require('readline-sync ');
 //function functionName(input){
   // return;
-  function reverse(str) {
+  /*function reverse(str) {
     let lettersArray = str.split('');
     let reversedLettersArray = lettersArray.reverse();
     return reversedLettersArray.join('');
@@ -192,7 +192,7 @@ let halved = nums.map(function(n){
 
 });
 
-console.log(halved);
+console.log(halved);*/
 
 //let names = ["Chris", "Jim", "Sally", "Blake", "Paul"];
 
@@ -205,10 +205,137 @@ console.log(halved);
 
 //console.log(firstInitials);
 
-setTimeout(function () {
+/*setTimeout(function () {
     console.log("This is an anonymous function!");
     }, 1500);
 
     function test() {
         console.log (`This is a named function!`);
-    };
+    };*/
+
+    /*function combineEntries(arrayName)
+    {
+      if (arrayName.length <= 1)
+      {
+         return arrayName[0];
+      } else 
+      {
+         return  arrayName[0];
+         
+      }
+   };
+   console.log();*/
+
+  /*function removeI(arr)
+   {
+      if (arr.length <=1)
+      {
+         return arr[0]; 
+         //end recursion
+      } else 
+      {
+         //remove one 'i' entry from array
+         //call removeI function again
+      }
+   };*/
+   /*function combineEntries(L)
+   {
+      if (arrayName.length <= 1){
+         return arrayName[0];
+      } else {
+        return  combineEntries(L);
+      }
+   };*/
+  // let integer = 5; 
+  /* let sum = function decreasingSum(integer = 5 ) {
+      if (integer === 1){
+         return integer;
+      } else {
+         return integer + (decreasingSum(integer-1));
+      }
+   };
+         
+         console.log(sum);
+
+       function combineEntries([L])
+       {
+         if (arrayName.length <= 1)
+         {
+            return L[0];
+         } else 
+         {
+            return L[0]+combineEntries(L.slice(1)
+            )}
+      }
+   console.log(combineEntries);
+*/
+
+
+
+   
+let giraffe = {
+   species: "Reticulated Giraffe",
+   name: "Cynthia",
+   weight: 1500,
+   age: 15,
+   diet: "leaves"
+ };
+ //console.log(giraffe.age);
+
+   newAge = giraffe.age + 1;
+
+   giraffe["age"] = newAge;
+
+ //  console.log(giraffe["age"]);
+
+   let tortoiseOne = {
+      age: 150,
+      species: "Galapagos Tortoise",
+      diet: ["pumpkins", "lettuce", "cabbage"]
+   };
+
+   let tortoiseTwo = {
+      age: 150,
+      species: "Galapagos Tortoise",
+      diet: ["pumpkins", "lettuce", "cabbage"]
+   };
+   console.log(tortoiseOne.age === tortoiseTwo.age);
+
+   //let num = Math.floor(Math.random()*10);
+
+  // console.log(num);
+
+  // let num = Math.round(Math.random()*10);
+
+//   console.log(num);
+
+
+  let num =  Math.trunc(-3.87);
+   console.log(num);
+//Math.random(-3.87)
+//Math.round(-3.87)
+//Math.trunc(-3.87)
+let students = {
+   names: ["Gerard Darris", "Banana Cat", "Apple Dog", "Mango Zebra", "Kiwi Kiwi"],
+   scores: [100, 95, 74, 82, 91]
+};
+
+for (let i = 0; i < students["names"].length; i++) {
+   let output = "";
+
+   for (items in students) {
+       output += `${students[items][i]}: `
+   }
+   console.log(output.slice(0, -2));
+}  
+const input = require('readline-sync');
+
+let name = input.question("What is your name?");
+console.log(`Hello, ${name}`);
+
+
+function parseData(text, delimiter) {
+   return text.split(delimiter);
+}
+
+module.exports = parseData;
